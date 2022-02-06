@@ -1,0 +1,164 @@
+/* connection with landing page.html, */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #2980b9, navy);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navibar {
+    background-color: white;
+}
+
+.navibar ul li a {
+    padding-bottom: 60%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    color: black;
+}
+
+
+/* start cart container */
+
+body .container_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    max-width: 1200px;
+    margin: 40px 0;
+    margin-left: 10.5%;
+    padding: 130px;
+}
+
+body .container_card .card_serivice {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+body .container_card .card_serivice:nth-child(1) .box_service_1 .content_card a {
+    background: #D7B472;
+}
+
+body .container_card .card_serivice:nth-child(2) .box_service_1 .content_card a {
+    background: #D7B472;
+}
+
+body .container_card .card_serivice:nth-child(3) .box_service_1 .content_card a {
+    background: #D7B472;
+}
+
+body .container_card .card_serivice .box_service_1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+body .container_card .card_serivice .box_service_1:hover {
+    transform: translateY(-50px);
+}
+
+body .container_card .card_serivice .box_service_1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body .container_card .card_serivice .box_service_1 .content_card {
+    padding: 20px;
+    text-align: center;
+}
+
+body .container_card .card_serivice .box_service_1 .content_card h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+body .container_card .card_serivice .box_service_1 .content_card h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+body .container_card .card_serivice .box_service_1 .content_card p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+}
+
+body .container_card .card_serivice .box_service_1 .content_card a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+body .container_card .card_serivice .box_service_1 .content_card a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+
+/* End Offer */
